@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Recipe page</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- Custom Style-->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<style>
+  /* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Global Variables */
+  :root {
+    /* Colors */
+
+    /* Primary */
+    --BrownNut: hsl(14, 45%, 36%);
+    --Dark-strawberry: hsl(332, 51%, 32%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Watermelon-White: hsl(330, 100%, 98%);
+    --Maionese: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Tea-Brown: hsl(30, 10%, 34%);
+    --Dark-Ashes: hsl(24, 5%, 18%);
+
+    /* Fonts */
+    --font-family-Young: "Young Serif", serif;
+    --font-family-Outfit: "Outfit", sans-serif;
+    --Font-size-paragraph: 16px;
+    --font-wght-400: 400;
+    --font-wght-600: 600;
+    --font-wght-700: 700;
+  }
+
+  body {
+    font-family: var(--font-family-Outfit) !important;
+    background-color: var(--Maionese);
+  }
+
+
+
+  /* Making-section */
+  .making-section {
+    background-color: var(--Watermelon-White) !important;
+  }
+
+  .making-h5,
+  .making-section>ul>li {
+    color: var(--Dark-strawberry) !important;
+  }
+
+  .making-h5,
+  ol {
+    font-weight: var(--font-wght-700) !important;
+  }
+
+  /* Custom Headings */
+  .custom-header,
+  .custom-h2 {
+    font-family: var(--font-family-Young) !important;
+  }
+
+  .custom-h2,
+  .custom-th,
+  li {
+    color: var(--BrownNut) !important;
+  }
+
+  td,
+  p {
+    font-weight: var(--font-wght-400) !important;
+    color: var(--Tea-Brown) !important;
+  }
+
+  ol>li>p,
+  ul>li>p {
+    margin-left: 15px !important;
+  }
+
+  /* Custom Style */
+
+  main {
+    height: 100%;
+  }
+
+
+
+  .card-main {
+    margin-top: 4rem;
+    background-color: var(--White) !important;
+    max-width: 750px !important;
+    padding: 3rem;
+  }
+</style>
+
+<body>
+  <!-- Main Section -->
+  <main>
+    <div class="wrapper">
+      <div class="card-main mx-auto rounded-2">
+
+        <section class="hero-section">
+          <!-- Image -->
+          <img src="assets/images/image-omelette.jpeg" alt="Hero Image" class="hero-img img-fluid rounded-2" />
+
+          <!-- Title -->
+          <h1 class="my-4 custom-header">Simple Omelette Recipe</h1>
+
+          <!-- Description -->
+          <p class="mb-4">
+            An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+          </p>
+        </section>
+
+        <!-- making Section -->
+        <section class="making-section p-3">
+          <h5 class="making-h5">making time</h5>
+          <ul>
+            <li>
+              <p><strong>Total</strong>: Approximately 10 minutes</p>
+            </li>
+            <li>
+              <p><strong>making</strong>: 5 minutes</p>
+            </li>
+            <li>
+              <p><strong>Cooking</strong>: 5 minutes</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Ingredients Section -->
+        <section class="ingredients-section">
+          <h2 class="mt-5 custom-h2">Ingredients</h2>
+          <ul>
+            <li>
+              <p>2-3 large eggs</p>
+            </li>
+            <li>
+              <p>Salt, to taste</p>
+            </li>
+            <li>
+              <p>Pepper, to taste</p>
+            </li>
+            <li>
+              <p>1 tablespoon of butter or oil</p>
+            </li>
+            <li>
+              <p>Optional fillings: cheese, diced vegetables, cooked meats, herbs</p>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="mt-5">
+
+        <!-- Instructions Section -->
+        <div class="instructions-section">
+          <h2 class="mt-5 custom-h2">Instructions</h2>
+          <ol>
+            <li>
+              <p><strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are
+                well mixed. You can add a tablespoon of water or milk for a fluffier texture.</p>
+            </li>
+            <li>
+              <p><strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.</p>
+            </li>
+            <li>
+              <p><strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the
+                pan to ensure the eggs evenly coat the surface.</p>
+            </li>
+            <li>
+              <p><strong>Add fillings (optional)</strong>: When the eggs begin to set at the edges but are still
+                slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</p>
+            </li>
+            <li>
+              <p><strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it
+                over the fillings. Let it cook for another minute, then slide it onto a plate.</p>
+            </li>
+            <li>
+              <p><strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.</p>
+            </li>
+          </ol>
+        </div>
+
+        <hr class="mt-5">
+
+        <!-- Nutrition Section -->
+        <section class="nutrition-section">
+          <h2 class="mt-5 custom-h2">Nutrition</h2>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Calories</td>
+                <th class="custom-th">277kcal</th>
+              </tr>
+              <tr>
+                <td>Carbs</td>
+                <th class="custom-th">0g</th>
+              </tr>
+              <tr>
+                <td>Protein</td>
+                <th class="custom-th">20g</th>
+              </tr>
+              <tr>
+                <td>Fat</td>
+                <th class="custom-th">22g</th>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
